@@ -1,0 +1,11 @@
+@tailwind base;
+
+.hover-trigger .hover-target {
+    display: none;
+}
+
+.hover-trigger:hover .hover-target {
+    display: block;
+}
+@tailwind components;
+@tailwind utilities;
