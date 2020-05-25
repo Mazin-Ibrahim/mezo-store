@@ -17,13 +17,43 @@
 
          <div class="py-12"> <!-- start content -->
 
-            <h1 class="text-teal-600 font-bold text-2xl uppercase ml-4"> All Products</h1>
+            <h1 class="text-yellow-500 font-bold text-2xl uppercase ml-4"> All Products</h1>
 
             <div class="mt-8">
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 px-4">
                   
-                       <div class="relative hover-trigger ml-5">
-                       <img class="h-56 w-40 rounded object-cover" src="../assets/image/header.jpg">
+                       <div class="relative hover-trigger border pb-4 mt-8 w-full">
+                       <img class="h-56 w-full rounded object-cover" src="../assets/image/header.jpg">
+
+                          <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
+                            Add to Cart
+                          </button>
+                   
+                        
+                       <div>
+                          <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
+
+                        <h1 class="text-sm text-gray-700 mt-2 text-center font-bold mx-4"><span class="text-red-600 line-through mr-2">$975.00</span>$899.99</h1>
+                       </div>
+
+                   </div>
+
+                    <div class="relative hover-trigger border pb-4 mt-8 w-full">
+                     <img class="h-56 w-full rounded object-cover" src="../assets/image/header.jpg">
+                       
+                      <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
+                            Add to Cart
+                          </button>
+
+                           <div>
+                          <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
+
+                        <h1 class="text-sm text-gray-700 mt-2 text-center font-bold mx-4"><span class="text-red-600 line-through mr-2">$975.00</span>$899.99</h1>
+                       </div>
+                   </div>
+
+                   <div class="relative hover-trigger border pb-4 mt-8 w-full">
+                       <img class="h-56 w-full rounded object-cover" src="../assets/image/header.jpg">
 
                           <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
                             Add to Cart
@@ -36,25 +66,24 @@
                         <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
                        </div>
 
-                     </div>
+                   </div>
 
-                    <div class="relative hover-trigger">
-                     <img class="h-56 w-40 rounded object-cover" src="../assets/image/header.jpg">
+                    <div class="relative hover-trigger border pb-4 mt-8 w-full">
+                     <img class="h-56 w-full rounded object-cover" src="../assets/image/header.jpg">
                        
-                       <button class="relative py-2 mr-6 mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
-                          Add to Cart
-                        </button>
+                      <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
+                            Add to Cart
+                          </button>
 
-                         <div class="mr-4">
+                           <div>
                           <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
 
-                        <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
+                        <h1 class="text-sm text-gray-700 mt-2 text-center font-bold mx-4"><span class="text-red-600 line-through mr-2">$975.00</span>$899.99</h1>
                        </div>
                    </div>
 
-
-                       <div class="relative hover-trigger ml-5">
-                       <img class="h-56 w-40 rounded object-cover" src="../assets/image/header.jpg">
+                   <div class="relative hover-trigger border pb-4 mt-8 w-full">
+                       <img class="h-56 w-full rounded object-cover" src="../assets/image/header.jpg">
 
                           <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
                             Add to Cart
@@ -64,55 +93,25 @@
                        <div>
                           <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
 
-                        <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
+                        <h1 class="text-sm text-gray-700 mt-2 text-center font-bold mx-4"><span class="text-red-600 line-through mr-2">$975.00</span>$899.99</h1>
                        </div>
 
-                     </div>
-
-                    <div class="relative hover-trigger">
-                     <img class="h-56 w-40 rounded object-cover" src="../assets/image/header.jpg">
-                       
-                       <button class="relative py-2 mr-6 mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
-                          Add to Cart
-                        </button>
-
-                         <div class="mr-4">
-                          <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
-
-                        <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
-                       </div>
                    </div>
 
-
-                       <div class="relative hover-trigger ml-5">
-                       <img class="h-56 w-40 rounded object-cover" src="../assets/image/header.jpg">
-
-                          <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
+                    <div class="relative hover-trigger border pb-4 mt-8 w-full">
+                     <img class="h-56 w-full rounded object-cover" src="../assets/image/header.jpg">
+                       
+                      <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
                             Add to Cart
                           </button>
-                   
-                        
-                       <div>
+
+                           <div>
                           <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
 
-                        <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
-                       </div>
-
-                     </div>
-
-                    <div class="relative hover-trigger">
-                     <img class="h-56 w-40 rounded object-cover" src="../assets/image/header.jpg">
-                       
-                       <button class="relative py-2 mr-6 mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
-                          Add to Cart
-                        </button>
-
-                         <div class="mr-4">
-                          <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
-
-                        <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
+                        <h1 class="text-sm text-gray-700 mt-2 text-center font-bold mx-4"><span class="text-red-600 line-through mr-2">$975.00</span>$899.99</h1>
                        </div>
                    </div>
+
 
 
 
@@ -122,6 +121,46 @@
             </div>
             
          </div> <!-- end content -->
+
+         <div class="px-4">
+            <div class="bg-gray-200 rounded-lg">
+                 <div class="px-4 py-6">
+                   <h1 class="text-2xl text font-semibold font-serif">MY<span class="text-yellow-700"> CART</span></h1>
+                 </div>
+
+                  <div class="px-4">
+                    <div class="bg-red-300 rounded shadow-md">
+                       <div class="flex flex-row justify-between mt-4 px-4 bg-red-700 py-4 rounded-t shadow-md">
+                         <h1 class="text-white font-semibold">Checkout</h1>
+                         <h1 class="text-white font-semibold">Items</h1>
+                       </div>
+
+                       <div class="py-4 px-2 flex flex-row justify-between items-center border">
+                         <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
+                         <h1 class="text-white font-semibold">Women Maroon</h1>
+                         <h1 class="text-white font-semibold">$899.99</h1>
+                       </div>
+
+                       <div class="py-4 px-2 flex flex-row justify-between items-center border">
+                         <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
+                         <h1 class="text-white font-semibold">Women Maroon</h1>
+                         <h1 class="text-white font-semibold">$899.99</h1>
+                       </div>
+
+                       <div class="py-4 px-2 flex flex-row justify-between items-center border">
+                         <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
+                         <h1 class="text-white font-semibold">Women Maroon</h1>
+                         <h1 class="text-white font-semibold">$899.99</h1>
+                       </div>
+
+                       <div class="py-4 px-2 flex flex-row justify-between items-center border">
+                         <h1 class="text-white font-semibold">Total $2400.90</h1>
+                         <button class="py-2 px-8 bg-red-700 text-white font-semibold hover:bg-red-500 rounded">Pay</button>
+                       </div>
+                  </div>
+                  </div>
+            </div>
+         </div>
         
     </div>
 </template>
