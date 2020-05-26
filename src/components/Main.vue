@@ -154,7 +154,7 @@
      <div class="py-4 px-2 flex flex-row justify-between items-center border">
        <div class="static ">
         <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
-         <h2 class="absolute  text-black font-bold bg-white rounded-full text-sm -mt-16 ml-12">43</h2>
+        <h2 class="absolute  text-black font-semibold w-4 h-4 px-0 py-0 bg-white rounded-full text-xs -mt-16 ml-16">43</h2>
        </div>
        <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
         <button class="text-white font-semibold text-2xl"><Plus/></button>
@@ -165,7 +165,7 @@
      <div class="py-4 px-2 flex flex-row justify-between items-center border">
        <div class="static ">
         <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
-         <h2 class="absolute  text-black font-bold bg-white rounded-full text-sm -mt-16 ml-12">43</h2>
+         <h2 class="absolute  text-black font-semibold w-4 h-4 px-0 py-0 bg-white rounded-full text-xs -mt-16 ml-16">43</h2>
        </div>
        <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
         <button class="text-white font-semibold text-2xl"><Plus/></button>
@@ -176,7 +176,7 @@
      <div class="py-4 px-2 flex flex-row justify-between items-center border">
        <div class="static ">
         <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
-         <h2 class="absolute  text-black font-bold bg-white rounded-full text-sm -mt-16 ml-12">43</h2>
+         <h2 class="absolute  text-black font-semibold w-4 h-4 px-0 py-0 bg-white rounded-full text-xs -mt-16 ml-16">43</h2>
        </div>
        <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
         <button class="text-white font-semibold text-2xl"><Plus/></button>
