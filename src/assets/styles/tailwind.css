@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .hover-trigger .hover-target {
     display: none;
@@ -7,5 +9,7 @@
 .hover-trigger:hover .hover-target {
     display: block;
 }
-@tailwind components;
-@tailwind utilities;
+
+.w-cust{
+	width: 20rem;
+}
