@@ -152,32 +152,41 @@
      </div>
 
      <div class="py-4 px-2 flex flex-row justify-between items-center border">
-       <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
+       <div class="static ">
+        <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
+         <h2 class="absolute  text-black font-bold bg-white rounded-full text-sm -mt-16 ml-12">43</h2>
+       </div>
        <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
-       <h1 class="text-white font-semibold text-base md:text-sm">$899.99</h1>
-       <button class="text-white font-semibold text-2xl"><Plus/></button>
-       <button class="text-white font-semibold text-2xl"><Minus/></button>
-     </div>
-
-     <div class="py-4 px-2 flex flex-row justify-between items-center border">
-       <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
-       <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
-       <h1 class="text-white font-semibold text-base md:text-sm">$899.99</h1>
         <button class="text-white font-semibold text-2xl"><Plus/></button>
+        <h1 class="text-white font-semibold text-base md:text-sm">$899.99</h1>
        <button class="text-white font-semibold text-2xl"><Minus/></button>
      </div>
 
      <div class="py-4 px-2 flex flex-row justify-between items-center border">
-       <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
+       <div class="static ">
+        <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
+         <h2 class="absolute  text-black font-bold bg-white rounded-full text-sm -mt-16 ml-12">43</h2>
+       </div>
        <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
-       <h1 class="text-white font-semibold text-base md:text-sm">$899.99</h1>
         <button class="text-white font-semibold text-2xl"><Plus/></button>
+        <h1 class="text-white font-semibold text-base md:text-sm">$899.99</h1>
        <button class="text-white font-semibold text-2xl"><Minus/></button>
      </div>
 
      <div class="py-4 px-2 flex flex-row justify-between items-center border">
-       <h1 class="text-white font-semibold ">Total $2400.90</h1>
+       <div class="static ">
+        <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
+         <h2 class="absolute  text-black font-bold bg-white rounded-full text-sm -mt-16 ml-12">43</h2>
+       </div>
+       <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
+        <button class="text-white font-semibold text-2xl"><Plus/></button>
+        <h1 class="text-white font-semibold text-base md:text-sm">$899.99</h1>
+       <button class="text-white font-semibold text-2xl"><Minus/></button>
+     </div>
+
+     <div class="py-4 px-2 flex flex-row justify-between items-center border">
        <button class="py-2 px-8 bg-white text-white text-gray-900 font-semibold hover:bg-gray-800 rounded">Pay</button>
+       <h1 class="text-white font-semibold ">Total $2400.90</h1>
      </div>
    </div>
  </div>
