@@ -28,109 +28,26 @@
     <div class="mt-8">
       <div class="grid grid-cols-1 px-4 md:grid-cols-3 md:gap-4 md:px-32">
 
-       <div class="relative hover-trigger border pb-4 mt-8 w-full md:w-48">
-         <img class="h-56 w-full md:w-48 rounded object-cover" src="../assets/image/header.jpg">
+       <div class="relative hover-trigger border pb-4 mt-8 w-full md:w-48" v-for="(product,index) in products">
+         
+         <img class="h-56 w-full md:w-48 rounded object-cover"  :src="product.image">
 
-         <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
+         <button @click="toCart(product)" class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
           Add to Cart
         </button>
 
 
         <div>
-          <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
+          <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">{{product.name}}</h1>
 
-          <h1 class="text-sm text-gray-700 mt-2 text-center font-bold mx-4"><span class="text-red-600 line-through mr-2">$975.00</span>$899.99</h1>
+          <h1 class="text-sm text-gray-700 mt-2 text-center font-bold mx-4"><span class="text-red-600 line-through mr-2">$975.00</span>${{product.price}}</h1>
         </div>
 
       </div>
 
-      <div class="relative hover-trigger border pb-4 mt-8 w-full md:w-48">
-       <img class="h-56 w-full md:w-48 rounded object-cover" src="../assets/image/header.jpg">
-
-       <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
-        Add to Cart
-      </button>
-
-      <div>
-        <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
-
-        <h1 class="text-sm text-gray-700 mt-2 text-center font-bold mx-4"><span class="text-red-600 line-through mr-2">$975.00</span>$899.99</h1>
-      </div>
-    </div>
-
-    <div class="relative hover-trigger border pb-4 mt-8 w-full md:w-48">
-     <img class="h-56 w-full md:w-48 rounded object-cover" src="../assets/image/header.jpg">
-
-     <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
-      Add to Cart
-    </button>
 
 
-    <div>
-      <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
-
-      <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
-    </div>
-
-  </div>
-
-
-  <div class="relative hover-trigger border pb-4 mt-8 w-full md:w-48">
-   <img class="h-56 w-full md:w-48 rounded object-cover" src="../assets/image/header.jpg">
-
-   <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
-    Add to Cart
-  </button>
-
-
-  <div>
-    <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
-
-    <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
-  </div>
-
-</div>
-
-
-
-<div class="relative hover-trigger border pb-4 mt-8 w-full md:w-48">
- <img class="h-56 w-full md:w-48 rounded object-cover" src="../assets/image/header.jpg">
-
- <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
-  Add to Cart
-</button>
-
-
-<div>
-  <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
-
-  <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
-</div>
-
-</div>
-
-
-
-<div class="relative hover-trigger border pb-4 mt-8 w-full md:w-48">
- <img class="h-56 w-full md:w-48 rounded object-cover" src="../assets/image/header.jpg">
-
- <button class="relative py-2  mx-auto px-8 rounded  -mt-12  bg-red-800 text-white hover:bg-red-500 font-semibold hover-target">
-  Add to Cart
-</button>
-
-
-<div>
-  <h1 class="text-sm text-gray-900 mt-4 text-center font-bold mx-4 ">Women Maroon</h1>
-
-  <h1 class="text-sm text-gray-900 mt-2 text-center font-bold mx-4"><span class="text-teal-600 line-through mr-2">$975.00</span>$899.99</h1>
-</div>
-
-</div>
-
-
-
-
-
+     
 
 
 </div>
@@ -149,50 +66,38 @@
      <div class="flex flex-row justify-between mt-4 px-4 bg-gray-800 py-4 rounded-t shadow-md">
        <h1 class="text-white font-semibold ">Checkout</h1>
        <h1 class="text-white font-semibold ">Items</h1>
+
+
      </div>
 
-     <div class="py-4 px-2 flex flex-row justify-between items-center border">
+     <div class="py-4 px-2 flex flex-row justify-between items-center border" v-for="(cart,index) in carts">
        <div class="static ">
-        <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
+        <img class="h-16 w-16 rounded" :src="cart.image">
         <h2 class="absolute  text-black font-semibold w-4 h-4 px-0 py-0 bg-white rounded-full text-xs -mt-16 ml-16">43</h2>
        </div>
-       <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
+       <h1 class="text-white font-semibold text-base md:text-sm">{{cart.name}}</h1>
         <button class="text-white font-semibold text-2xl"><Plus/></button>
-        <h1 class="text-white font-semibold text-base md:text-sm">$899.99</h1>
+        <h1 class="text-white font-semibold text-base md:text-sm">${{cart.price}}</h1>
        <button class="text-white font-semibold text-2xl"><Minus/></button>
      </div>
 
-     <div class="py-4 px-2 flex flex-row justify-between items-center border">
-       <div class="static ">
-        <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
-         <h2 class="absolute  text-black font-semibold w-4 h-4 px-0 py-0 bg-white rounded-full text-xs -mt-16 ml-16">43</h2>
-       </div>
-       <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
-        <button class="text-white font-semibold text-2xl"><Plus/></button>
-        <h1 class="text-white font-semibold text-base md:text-sm">$899.99</h1>
-       <button class="text-white font-semibold text-2xl"><Minus/></button>
-     </div>
+      
+     
 
-     <div class="py-4 px-2 flex flex-row justify-between items-center border">
-       <div class="static ">
-        <img class="h-16 w-16 rounded" src="../assets/image/header.jpg">
-         <h2 class="absolute  text-black font-semibold w-4 h-4 px-0 py-0 bg-white rounded-full text-xs -mt-16 ml-16">43</h2>
-       </div>
-       <h1 class="text-white font-semibold text-base md:text-sm">Women Maroon</h1>
-        <button class="text-white font-semibold text-2xl"><Plus/></button>
-        <h1 class="text-white font-semibold text-base md:text-sm">$899.99</h1>
-       <button class="text-white font-semibold text-2xl"><Minus/></button>
-     </div>
+     
 
      <div class="py-4 px-2 flex flex-row justify-between items-center border">
        <button class="py-2 px-8 bg-white text-white text-gray-900 font-semibold hover:bg-gray-800 rounded">Pay</button>
-       <h1 class="text-white font-semibold ">Total $2400.90</h1>
+       <h1 class="text-white font-semibold ">Total </h1>
      </div>
    </div>
  </div>
 </div>
 </div>
 </div>
+
+
+
 
 </div>
 </template>
@@ -213,9 +118,47 @@ export default{
   data(){
 
     return {
-      image: 'assets/image/header.jpg'
+      products:[
+       {
+        id:1,
+        image:require('../assets/image/5.jpg'),
+        price:354,
+        name:'Women Maroon'
+       },
+       {
+        id:2,
+         image:require('../assets/image/2.jpg'),
+        price:32,
+        name:'T-shirt'
+       },
+
+       {
+        id:3,
+         image:require('../assets/image/4.jpg'),
+        price:45,
+        name:'Trousers'
+       },
+      ],
+      carts:[],
+
+     
     }
-  }
+
+   
+  },
+
+
+
+    methods:{
+
+        toCart:function(product){
+
+           this.carts.push(product);
+
+           this.carts = [...new Set(this.carts)]
+          
+        }
+      },
 
 }
 </script>
