@@ -73,12 +73,12 @@
      <div class="py-4 px-2 flex flex-row justify-between items-center border" v-for="(cart,index) in carts">
        <div class="static ">
         <img class="h-16 w-16 rounded" :src="cart.image">
-        <h2 class="absolute  text-white font-semibold w-4 h-4 px-0 py-0 bg-gray-900 rounded-full text-xs -mt-16 mg mx-16 pl-1">{{count}}</h2>
+        <h2 class="absolute  text-white font-semibold w-4 h-4 px-0 py-0 bg-gray-900 rounded-full text-xs -mt-16 mg mx-16 pl-1">{{cart.qunt}}</h2>
       </div>
       <h1 class="text-gray-900 font-semibold text-base md:text-sm">{{cart.name}}</h1>
-      <button class="text-gray-900 font-semibold text-2xl" @click="Add()"><Plus/></button>
+      <button class="text-gray-900 font-semibold text-2xl" @click="Add(cart)"><Plus/></button>
       <h1 class="text-gray-900 font-semibold text-base md:text-sm">${{cart.price}}</h1>
-      <button class="text-gray-900 font-semibold text-2xl" @click="Min()"><Minus/></button>
+      <button class="text-gray-900 font-semibold text-2xl" @click="Min(cart)"><Minus/></button>
     </div>
 
 
@@ -88,7 +88,8 @@
 
     <div class="py-4 px-2 flex flex-row justify-between items-center border">
      <button class="py-2 px-8 bg-gray-500 text-white text-gray-900 font-semibold hover:bg-gray-800 rounded">Pay</button>
-     <h1 class="text-gray-900 font-semibold ">Total ${{total}}</h1>
+     <h1 class="text-gray-900 font-semibold ">Total ${{fuckTotal}}</h1>
+
    </div>
  </div>
 </div>
@@ -123,27 +124,34 @@ export default{
         id:1,
         image:require('../assets/image/5.jpg'),
         price:5,
-        name:'Women Maroon'
+        name:'Women Maroon',
+        qunt:0,
+        cul:0
       },
       {
         id:2,
         image:require('../assets/image/2.jpg'),
         price:4,
-        name:'T-shirt'
+        name:'T-shirt',
+        qunt:0,
+        cul:0
       },
 
       {
         id:3,
         image:require('../assets/image/4.jpg'),
         price:3,
-        name:'Trousers'
+        name:'Cute T-shirt',
+        qunt:0,
+        cul:0
       },
 
       ],
       carts:[],
-      count:1,
       total:0,
-      custemTotal:[]
+      custemTotal:[],
+      finalTotal:0,
+      fuckTotal:0
 
 
     }
@@ -167,29 +175,53 @@ export default{
              
              
             this.custemTotal.push(this.carts[check].price)
+
+
              
 
              this.custemTotal = [...new Set(this.custemTotal)]
+              
+              
+             this.total = this.custemTotal.reduce((a,b) => a + b, 0) 
 
-             this.total = this.custemTotal.reduce((a,b) => a + b, 0)
+            
           
           }
 
 
-
           },
 
-          Add(){
+          Add(cart){
+                 
+             cart.qunt++ 
+           
 
-            this.count++;
+              cart.cul = cart.price * cart.qunt
+             
+               // this.fuckTotal = cart.cul
+                       
+               this.fuckTotal = this.carts[0].cul+this.carts[1].cul+this.carts[2].cul
+
+              //   this.carts.forEach(item => {
+
+              //     this.fuckTotal += item.cul
+              // } )
+
+              
+
+              
+
+
        
           },
 
-          Min(){
+          Min(cart){
 
 
-            if(this.count != 0){
-             this.count--;
+            if(cart.qunt != 0){
+                 cart.qunt--
+
+                 this.total = this.custemTotal - cart.qunt 
            }
          },
        },
