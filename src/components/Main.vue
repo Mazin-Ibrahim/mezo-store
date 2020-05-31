@@ -148,7 +148,7 @@ export default{
 
       {
         id:4,
-        image:require('../assets/image/5.jpg'),
+        image:require('../assets/image/1.jpg'),
         price:8,
         name:'Anything',
         qunt:0,
@@ -192,26 +192,7 @@ export default{
         
          }
 
-       // this.carts = [...new Set(this.carts)]
-
-          
-          
-       //    for(let check=0;check <= this.carts.length; check++){
-             
-             
-       //      this.custemTotal.push(this.carts[check].price)
-
-
-             
-
-       //       this.custemTotal = [...new Set(this.custemTotal)]
-              
-              
-       //       this.total = this.custemTotal.reduce((a,b) => a + b, 0) 
-
-            
-          
-       //    }
+    
 
 
           },
@@ -237,7 +218,11 @@ export default{
             if(cart.qunt != 0){
                  cart.qunt--
 
-                 this.total = this.custemTotal - cart.qunt 
+                // let total = 0;
+                // this.carts.forEach(item => {
+                //   total += (item.price * item.qunt);
+                // });
+               this.fuckTotal = this.fuckTotal - cart.price
            }
          },
        },
