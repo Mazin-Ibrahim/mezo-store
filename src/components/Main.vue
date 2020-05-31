@@ -146,6 +146,15 @@ export default{
         cul:0
       },
 
+      {
+        id:4,
+        image:require('../assets/image/5.jpg'),
+        price:8,
+        name:'Anything',
+        qunt:0,
+        cul:0
+      },
+
       ],
       carts:[],
       total:0,
@@ -159,34 +168,50 @@ export default{
 
   },
 
+  computed: {
+    
+  },
+
 
 
   methods:{
 
     toCart(product){
 
-       this.carts.push(product);
+        
 
-       this.carts = [...new Set(this.carts)]
+         if(this.carts.some(found => found.id == product.id )){
+
+         }
+
+         else{
+          
+          this.carts.push(product);
+
+          // this.fuckTotal = product.price
+        
+         }
+
+       // this.carts = [...new Set(this.carts)]
 
           
           
-          for(let check=0;check <= this.carts.length; check++){
+       //    for(let check=0;check <= this.carts.length; check++){
              
              
-            this.custemTotal.push(this.carts[check].price)
+       //      this.custemTotal.push(this.carts[check].price)
 
 
              
 
-             this.custemTotal = [...new Set(this.custemTotal)]
+       //       this.custemTotal = [...new Set(this.custemTotal)]
               
               
-             this.total = this.custemTotal.reduce((a,b) => a + b, 0) 
+       //       this.total = this.custemTotal.reduce((a,b) => a + b, 0) 
 
             
           
-          }
+       //    }
 
 
           },
@@ -194,22 +219,13 @@ export default{
           Add(cart){
                  
              cart.qunt++ 
-           
 
-              cart.cul = cart.price * cart.qunt
-             
-               // this.fuckTotal = cart.cul
-                       
-               this.fuckTotal = this.carts[0].cul+this.carts[1].cul+this.carts[2].cul
-
-              //   this.carts.forEach(item => {
-
-              //     this.fuckTotal += item.cul
-              // } )
-
-              
-
-              
+                let total = 0;
+                this.carts.forEach(item => {
+                  total += (item.price * item.qunt);
+                });
+               this.fuckTotal =total
+                  
 
 
        
