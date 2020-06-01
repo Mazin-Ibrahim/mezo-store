@@ -70,10 +70,13 @@
 
      </div>
 
-     <div class="py-4 px-2 flex flex-row justify-between items-center border" v-for="(cart,index) in carts">
+     <div class="py-6 px-2 flex flex-row justify-between items-center border" v-for="(cart,index) in carts">
+
        <div class="static ">
         <img class="h-16 w-16 rounded" :src="cart.image">
         <h2 class="absolute  text-white font-semibold w-4 h-4 px-0 py-0 bg-gray-900 rounded-full text-xs -mt-16 mg mx-16 pl-1">{{cart.qunt}}</h2>
+
+          <button class="absolute  text-white font-bold bg-gray-900 rounded text-xs -mt-16 " v-if="cart.qunt == 0" @click="Remove(index)">Delete</button>
       </div>
       <h1 class="text-gray-900 font-semibold text-base md:text-sm">{{cart.name}}</h1>
       <button class="text-gray-900 font-semibold text-2xl" @click="Add(cart)"><Plus/></button>
@@ -108,12 +111,14 @@
 
 import Plus from '../components/icons/Plus'
 import Minus from '../components/icons/Minus'
+import Delete from '../components/icons/Delete'
 
 export default{
 
   components: {
     Plus,
-    Minus 
+    Minus,
+    Delete
   },
 
   data(){
@@ -224,7 +229,15 @@ export default{
                 // });
                this.fuckTotal = this.fuckTotal - cart.price
            }
+
+
          },
+
+          Remove(index){
+                 
+                this.carts.splice(index, 1)
+              
+           },
        },
 
      }
