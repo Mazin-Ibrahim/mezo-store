@@ -129,7 +129,7 @@ export default{
         image:require('../assets/image/5.jpg'),
         price:5,
         name:'Women Maroon',
-        qunt:0,
+        qunt:1,
         cul:0
       },
       {
@@ -137,7 +137,7 @@ export default{
         image:require('../assets/image/2.jpg'),
         price:4,
         name:'T-shirt',
-        qunt:0,
+        qunt:1,
         cul:0
       },
 
@@ -146,7 +146,7 @@ export default{
         image:require('../assets/image/4.jpg'),
         price:3,
         name:'Cute T-shirt',
-        qunt:0,
+        qunt:1,
         cul:0
       },
 
@@ -155,7 +155,7 @@ export default{
         image:require('../assets/image/1.jpg'),
         price:8,
         name:'Anything',
-        qunt:0,
+        qunt:1,
         cul:0
       },
 
@@ -192,7 +192,13 @@ export default{
           
           this.carts.push(product);
 
-          // this.fuckTotal = product.price
+           // this.fuckTotal = product.price
+
+            let total = 0;
+                this.carts.forEach(item => {
+                  total += item.price
+                });
+               this.fuckTotal =total
         
          }
 
