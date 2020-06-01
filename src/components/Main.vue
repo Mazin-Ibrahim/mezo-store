@@ -111,14 +111,13 @@
 
 import Plus from '../components/icons/Plus'
 import Minus from '../components/icons/Minus'
-import Delete from '../components/icons/Delete'
 
 export default{
 
   components: {
     Plus,
     Minus,
-    Delete
+  
   },
 
   data(){
