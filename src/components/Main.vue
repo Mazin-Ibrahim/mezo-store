@@ -76,12 +76,12 @@
         <img class="h-16 w-16 rounded" :src="cart.image">
         <h2 class="absolute  text-white font-semibold w-4 h-4 px-0 py-0 bg-gray-900 rounded-full text-xs -mt-16 mg mx-16 pl-1">{{cart.qunt}}</h2>
 
-          <button class="absolute  text-white font-bold bg-gray-900 rounded text-xs -mt-16 " v-if="cart.qunt == 0" @click="Remove(index)">Delete</button>
+          <button class="absolute  text-white font-bold bg-gray-900 rounded text-xs -mt-16 " @click="Remove(index)">Delete</button>
       </div>
       <h1 class="text-gray-900 font-semibold text-base md:text-sm">{{cart.name}}</h1>
       <button class="text-gray-900 font-semibold text-2xl" @click="Add(cart)"><Plus/></button>
       <h1 class="text-gray-900 font-semibold text-base md:text-sm">${{cart.price}}</h1>
-      <button class="text-gray-900 font-semibold text-2xl" @click="Min(cart)"><Minus/></button>
+      <button class="text-gray-900 font-semibold text-2xl" @click="Min(cart,index)"><Minus/></button>
     </div>
 
 
@@ -216,16 +216,16 @@ export default{
        
           },
 
-          Min(cart){
+          Min(cart,index){
+            
 
+             if(cart.qunt == 0){
+              this.carts.splice(index, 1)
+             }
 
             if(cart.qunt != 0){
                  cart.qunt--
 
-                // let total = 0;
-                // this.carts.forEach(item => {
-                //   total += (item.price * item.qunt);
-                // });
                this.fuckTotal = this.fuckTotal - cart.price
            }
 
@@ -233,8 +233,14 @@ export default{
          },
 
           Remove(index){
-                 
-                this.carts.splice(index, 1)
+                
+                // alert(this.carts[index].name)
+                 this.fuckTotal = this.fuckTotal - (this.carts[index].price * this.carts[index].qunt) 
+                 this.carts.splice(index, 1)
+
+               
+
+
               
            },
        },
